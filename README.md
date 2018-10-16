@@ -47,8 +47,13 @@ Perform a test query against the `label` endpoint
 $ curl http://localhost:6789/api/v1/label/job/values
 {"status":"success","data":["prometheus"]}
 ```
+### Grafana
 
-## API
+After promproxy is running, setup (or change) your `Prometheus` data source in Grafana to point to promproxy instead of a prometheus server.
+
+<img src="docs/images/grafana_setup.png" width="400">
+
+## API Limitations
 
 Currently, only the following endpoints of the Prometheus API are supported:
 
